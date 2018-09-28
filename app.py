@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from werkzeug.utils import secure_filename
 import raw_contract_parser, rule_based
-import json
+import os,json
 app = Flask(__name__)
 
 @app.route('/available_clause/',methods=['GET'])
@@ -44,6 +44,7 @@ def analyze():
                     [{'present_clauses':present_clause},
                     {'missing_clauses':missing_clause}]
                 }
+        os.remove(fpath)
         return json.dumps(resp)
 		
 if __name__ == '__main__':
