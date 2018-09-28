@@ -1,0 +1,37 @@
+{
+    "data":{
+      "available_clauses":[
+        {"name":"limitation_of_liability",
+          "desc":"Limitation of Liability"
+        },
+          {"name":"general_liability_exclusion",
+          "desc":"General Liability Exclusions/Disclaimers"
+        },
+          {"name":"liability_to_pay_damages",
+          "desc":"Liability to Pay Damages, Costs, Expense, etc. In Specified Events"
+        },
+          {"name":"intellectual_property",
+          "desc":"Intellectual Property Assignment"
+        },
+          {"name":"warranties",
+          "desc":"Warranties"
+        },
+          {"name":"termination",
+          "desc":"Termination or Cancellation"
+        },
+          {"name":"consequences_of_termination",
+          "desc":"Consequences of Termination/Cancellation"
+        },
+          {"name":"timing_of_delivery",
+          "desc":"Timing of Delivery"
+        },
+          {"name":"force_majeure",
+          "desc":"Force Majeure"
+        },
+          {"name":"governing_law",
+          "desc":"Governing Law"
+        }
+    
+      ]
+    }
+  }
