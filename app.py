@@ -66,7 +66,7 @@ def analyze():
         resp = {'data':
                     [{'present_clauses':present_clause},
                     {'missing_clauses':missing_clause},
-                    {'present_clauses_detial':details}]
+                    {'present_clauses_detail':details}]
                 }
         os.remove(fpath)
         return json.dumps(resp)
