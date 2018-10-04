@@ -8,7 +8,18 @@ app = Flask(__name__)
 def available_clause():
     with open('available_clause.json','r') as f:
         return f.read()
-	
+
+@app.route('/clause', methods = ['POST'])
+def clause():
+    phrase = request.form['phrase']
+    rule_based_analyzer = rule_based.RuleBased()
+    analysis_result = ''.join(rule_based_analyzer.infer([phrase])).split(",")
+
+    resp = {'data':
+            {'result':analysis_result}
+        }
+    return json.dumps(resp)
+
 @app.route('/analyze', methods = ['GET', 'POST'])
 def analyze():
    if request.method == 'POST':
